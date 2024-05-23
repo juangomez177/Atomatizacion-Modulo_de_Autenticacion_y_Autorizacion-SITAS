@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        
+
         features = "src/test/resources/features/find_out_udea_official_site.feature",
         glue = "co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
