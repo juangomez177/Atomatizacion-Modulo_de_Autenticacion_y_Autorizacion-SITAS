@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Find out the U de A official page across the Google search Eng." tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-23T20:14:23" hostname="MSI" time="13.994">
+  <properties/>
+  <testcase name="Search the udea official page across the Google search Eng." classname="Find out the U de A official page across the Google search Eng." time="13.994"/>
+  <system-out><![CDATA[
+Scenario: Search the udea official page across the Google search Eng. ?[90m# src/test/resources/features/find_out_udea_official_site.feature:6?[0m
+  ?[32mGiven ?[0m?[32mI am in the google page?[0m                                       ?[90m# co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.FindOutUdeAStepDefinition.iAmInTheGooglePage()?[0m
+  ?[32mWhen ?[0m?[32mI search U de A word in the Google search eng?[0m                  ?[90m# co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.FindOutUdeAStepDefinition.iSearchUDeAWordInTheGoogleSearchEng()?[0m
+  ?[32mThen ?[0m?[32mI can see the official udea link?[0m                               ?[90m# co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.FindOutUdeAStepDefinition.iCanSeeTheOfficialUdeaLink()?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Search the udea official page across the Google search Eng.(find-out-the-u-de-a-official-page-across-the-google-search-eng.;search-the-udea-official-page-across-the-google-search-eng.)
+--------------------------------------------------------------------------------
+[Test worker] INFO co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.FindOutUdeAStepDefinition - Accediendo a la pagina
+[Test worker] INFO  - ?[92m|-- Given I am in the google page?[0m
+[Test worker] INFO  - ?[92m|---- Usuario open the?[0m
+[Test worker] INFO  - ?[92m|------ usuario opens the Google page?[0m
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --start-maximized, --lang=e...], extensions: []}}
+[Test worker] INFO  - ?[92m|-- When I search U de A word in the Google search eng?[0m
+[Test worker] INFO  - ?[92m|---- Usuario find out the?[0m
+[Test worker] INFO  - ?[92m|------ Usuario enter the?[0m
+[Test worker] INFO  - ?[92m|-------- usuario enters ' U de A' then hits [RETURN] into INPUT TEXT?[0m
+[Test worker] INFO  - ?[92m|-------- usuario clicks on LINK UDEA HOMEPAGE?[0m
+[Test worker] INFO  - ?[92m|-- Then I can see the official udea link?[0m
+[Test worker] INFO  - ?[92m|---- Then validation should be a string containing 'Actualidad'?[0m
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Search the udea official page across the Google search Eng.
+----------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>
