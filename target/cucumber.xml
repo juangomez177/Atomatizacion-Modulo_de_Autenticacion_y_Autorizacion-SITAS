@@ -1,10 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.197" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Find out the U de A official page across the Google search Eng." name="Search the udea official page across the Google search Eng." time="13.874">
+<testsuite name="Cucumber" time="6.343" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Validacion de formulario de registro" name="Verificar registro exitoso - Example #1.1" time="5.683">
+<failure type="org.openqa.selenium.JavascriptException" message="javascript error: {&quot;status&quot;:12,&quot;value&quot;:&quot;Element is not currently interactable and may not be manipulated&quot;}
+  (Session info: chrome=125.0.6422.78)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9ded449c7cfc35c0e5e1dce77cd156e, clearElement {id=f.B158A7774EB8A9E8B4895BAF94848124.d.F64D0D7307DA5A7AFFABA30B7614049D.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\gomez\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:13485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13485/devtoo..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9ded449c7cfc35c0e5e1dce77cd156e)] -&gt; xpath: //input[@name='identificationType'] ]
+Session ID: f9ded449c7cfc35c0e5e1dce77cd156e">
+<![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":12,"value":"Element is not currently interactable and may not be manipulated"}
+  (Session info: chrome=125.0.6422.78)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9ded449c7cfc35c0e5e1dce77cd156e, clearElement {id=f.B158A7774EB8A9E8B4895BAF94848124.d.F64D0D7307DA5A7AFFABA30B7614049D.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\gomez\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:13485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13485/devtoo..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9ded449c7cfc35c0e5e1dce77cd156e)] -> xpath: //input[@name='identificationType'] ]
+Session ID: f9ded449c7cfc35c0e5e1dce77cd156e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:745)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.lambda$performAs$0(EnterValueIntoTarget.java:19)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$WaqYVPIC.performAs$accessor$lomG8O6a(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$WaqYVPIC.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.interactions.pestanaregistro.EnterThe.performAs(EnterThe.java:38)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.interactions.pestanaregistro.EnterThe$ByteBuddy$Kx7JsSVJ.performAs$accessor$1oWo91an(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.interactions.pestanaregistro.EnterThe$ByteBuddy$Kx7JsSVJ.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.RegisterThe.performAs(RegisterThe.java:32)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.RegisterThe$ByteBuddy$MRIWwzMf.performAs$accessor$ObAnwrlL(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.RegisterThe$ByteBuddy$MRIWwzMf.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.PestanaRegistroStepDefinition.ingresoTodosLosCamposObligatorios(PestanaRegistroStepDefinition.java:58)
+	at ?.ingreso todos los campos obligatorios con nombre "Juan", apellido "Perez", tipo documento "CC", documento "123456789", correo "juan.perez@example.com", contrasena "SecurePassword123", pais "+57", telefono "3001234567"(file:///C:/Users/gomez/Desktop/Automatizacio%20Modulo%20de%20Autenticacion%20y%20Autorizacion/src/test/resources/features/pestana_registro.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
-Given I am in the google page...............................................passed
-When I search U de A word in the Google search eng..........................passed
-Then I can see the official udea link.......................................passed
+Given que estoy en la pagina de registro....................................passed
+When ingreso todos los campos obligatorios con nombre "Juan", apellido "Perez", tipo documento "CC", documento "123456789", correo "juan.perez@example.com", contrasena "SecurePassword123", pais "+57", telefono "3001234567".failed
+And doy click en el boton Crear cuenta......................................skipped
+Then deberia ver un mensaje de exito indicando que la cuenta ha sido creada.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validacion de formulario de registro" name="Verificar campos obligatorios en el formulario de registro" time="0.197">
+<system-out><![CDATA[
+Given que estoy en la pagina de registro....................................passed
+When intento enviar el formulario sin completar todos los campos obligatorios.passed
+Then deberia ver un mensaje de error indicando los campos faltantes.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validacion de formulario de registro" name="Verificar limites de caracteres en campos de registro" time="0.191">
+<system-out><![CDATA[
+Given que estoy en la pagina de registro....................................passed
+When intento ingresar mas caracteres de los permitidos en los campos de nombre, apellido o correo electronico.passed
+Then deberia ver un mensaje de error indicando los limites de caracteres....passed
 ]]></system-out>
 </testcase>
 </testsuite>
