@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanainiciosesion.ValidationLoginAccount;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanainiciosesion.ClickOnLogin;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanainiciosesion.LoginThe;
@@ -47,9 +46,6 @@ public class PestanaInicioSesionStepDefinition {
         botonInicioSesionStepDefinition.queEstoyEnCualquierPaginaDeLaAplicacionParaInicioSesion();
         botonInicioSesionStepDefinition.hagoClicEnElBotonDeLogin();
         botonInicioSesionStepDefinition.deberiaSerRedirigidoALaPaginaDeInicioDeSesion();
-
-        //OnStage.theActorCalled("usuario").attemptsTo(OpenAnyPage.browser("https://frontend-virtual-72qyi8vl3-lauratobons-projects.vercel.app/auth/login"));
-
     }
 
     @When("ingreso mi correo electronico {string} y contrasena {string}")
@@ -65,31 +61,5 @@ public class PestanaInicioSesionStepDefinition {
     @Then("deberia ser mostrar un mensaje de confirmacion para ser redirigido a la pagina principal")
     public void deberiaSerMostrarUnMensajeDeConfirmacionParaSerRedirigidoALaPaginaPrincipal() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationLoginAccount.loadCredentials(), Matchers.containsString("Cuenta Logueada Correctamente")));
-
-    }
-
-
-    @When("ingreso un correo electronico {string} y contrasena {string} incorrectos por {int} <veces>")
-    public void ingresoUnCorreoElectronicoYContrasenaIncorrectosPorVeces(String arg0, String arg1, int arg2) {
-    }
-
-    @Then("la cuenta del usuario se bloquea automáticamente, mostrando un mensaje de cuenta boqueada")
-    public void laCuentaDelUsuarioSeBloqueaAutomáticamenteMostrandoUnMensajeDeCuentaBoqueada() {
-    }
-
-    @Given("que el usuario intenta iniciar sesion con credenciales incorrectas dos veces")
-    public void queElUsuarioIntentaIniciarSesionConCredencialesIncorrectasDosVeces() {
-    }
-
-    @When("el usuario intenta iniciar sesion con credenciales incorrectas por tercera vez")
-    public void elUsuarioIntentaIniciarSesionConCredencialesIncorrectasPorTerceraVez() {
-    }
-
-    @Then("nuevamente se pide el inicio de sesion, sin saltar el bloqueo de la cuenta ni el mensaje de bloqueo")
-    public void nuevamenteSePideElInicioDeSesionSinSaltarElBloqueoDeLaCuentaNiElMensajeDeBloqueo() {
-    }
-
-    @And("se permite ingresar indefinidamente las credenciales sin restricción de bloqueo")
-    public void sePermiteIngresarIndefinidamenteLasCredencialesSinRestricciónDeBloqueo() {
     }
 }

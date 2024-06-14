@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.CONFIRMATION_PASSWORD_SAFE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.RegisterPage.CONFIRMATION_PASSWORD_SAFE;
 
 public class ValidationPasswordSafe implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationPasswordSafe implements Question<String> {
     }
 
     public static ValidationPasswordSafe message() {
-
         return new ValidationPasswordSafe();
     }
 

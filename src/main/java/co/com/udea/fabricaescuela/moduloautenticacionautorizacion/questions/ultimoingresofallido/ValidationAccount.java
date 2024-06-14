@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.CONSECUTIVE_FAILED_LOGIN_MESSAGE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.LoginPage.CONSECUTIVE_FAILED_LOGIN_MESSAGE;
 
 public class ValidationAccount implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationAccount implements Question<String> {
     }
 
     public static ValidationAccount isBlocked() {
-
         return new ValidationAccount();
     }
 

@@ -4,16 +4,14 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.EDIT_PASSWORD_SUCCESS_MESSAGE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.EditProfilePage.EDIT_PASSWORD_SUCCESS_MESSAGE;
 
 public class ValidationSavePassword implements Question<String> {
 
     public ValidationSavePassword() {
     }
 
-
     public static ValidationSavePassword isCorrect() {
-
         return new ValidationSavePassword();
     }
 

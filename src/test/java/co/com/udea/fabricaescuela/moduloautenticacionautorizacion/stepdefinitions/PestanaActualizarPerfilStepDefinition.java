@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanaactualizarperfil.ValidationUpdateProfileAction;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanaactualizarperfil.ValidationUpdateProfilePage;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaactualizarperfil.ClickOnSaveChanges;
@@ -44,6 +43,7 @@ public class PestanaActualizarPerfilStepDefinition {
 
     @Given("soy un usuario logueado con correo {string} y contrasena {string}")
     public void soyUnUsuarioLogueadoConCorreoYContrasena(String correo, String contrasena) {
+
         // Se garantiza iniciar sesion mediante los steps de PestanaPerfilStepDefinition
         pestanaPerfilStepDefinition.setup();
         pestanaPerfilStepDefinition.queYaEstoyAutenticadoEnLaPlataforma(correo, contrasena);
@@ -71,7 +71,6 @@ public class PestanaActualizarPerfilStepDefinition {
     @When("podria modifico mis datos personales como Nombre {string}, Apellido {string}, Correo Electronico {string}, Pais {string} y Telefono {string}")
     public void podriaModificoMisDatosPersonalesComoNombreApellidoCorreoElectronicoPaisYTelefono(String nombre, String apellido, String correo, String pais, String telefono) {
         user.attemptsTo(UpdateThe.credentials(nombre, apellido, correo, pais, telefono));
-
     }
 
     @And("al dar click en el boton guardar cambios")
@@ -81,6 +80,6 @@ public class PestanaActualizarPerfilStepDefinition {
 
     @Then("deberia de actualizarse mis datos personales en el sistema, mostrando un mensaje de exito")
     public void deberiaDeActualizarseMisDatosPersonalesEnElSistemaMostrandoUnMensajeDeExito() {
-        GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationUpdateProfileAction.updateCredentials(), Matchers.containsString("Datos cambiados Correctamente")));
+        GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationUpdateProfileAction.updateCredentials(), Matchers.containsString("Datos Cambiados Correctamente")));
     }
 }

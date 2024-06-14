@@ -5,8 +5,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.*;
-
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.EditProfilePage.*;
 
 public class EnterThe implements Interaction {
     private final String contrasena;
@@ -18,7 +17,6 @@ public class EnterThe implements Interaction {
         this.contrasena = contrasena;
         this.nuevaContrasena = nuevaContrasena;
         this.confirmContrasena = confirmContrasena;
-
     }
 
     public static EnterThe passwordToChange(String contrasena, String nuevaContrasena, String confirmContrasena) {
@@ -31,7 +29,6 @@ public class EnterThe implements Interaction {
                 Enter.theValue(contrasena).into(INFO_TEXT_PASSWORD),
                 Enter.theValue(nuevaContrasena).into(NEW_TEXT_PASSWORD),
                 Enter.theValue(confirmContrasena).into(CONFIRM_NEW_TEXT_PASSWORD)
-
         );
     }
 }

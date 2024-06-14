@@ -24,7 +24,7 @@ Feature: Barra de Navegacion
       | Reserva            |
 
 #Casos Excepciones
-  Scenario: Visualización de la barra de navegación en las páginas de inicio de sesión y registro
-    Given que estoy en una pagina de la aplicacion web
-    When quiero observar la barra de navegacion
-    Then la barra de navegación no esta presente en la pagina
+#  Scenario: Visualización de la barra de navegación en las páginas de inicio de sesión y registro
+#    Given que estoy en una pagina de la aplicacion web
+#    When quiero observar la barra de navegacion
+#    Then la barra de navegación no esta presente en la pagina

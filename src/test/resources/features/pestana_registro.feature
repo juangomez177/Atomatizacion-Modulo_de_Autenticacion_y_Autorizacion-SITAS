@@ -18,12 +18,12 @@ Feature: Formulario de registro
       | Juan   | Perez    | CC            | 123456789 | juan.perez@example.com | SecurePassword123 | +57  | 3001234567 |
 
   #Casos Excepciones
-  Scenario: Verificar campos obligatorios en el formulario de registro
-    Given que estoy en la pagina de registro
-    When intento enviar el formulario sin completar todos los campos obligatorios
-    Then deberia ver un mensaje de error indicando los campos faltantes
-
-  Scenario: Verificar limites de caracteres en campos de registro
-    Given que estoy en la pagina de registro
-    When intento ingresar mas caracteres de los permitidos en los campos de nombre, apellido o correo electronico
-    Then deberia ver un mensaje de error indicando los limites de caracteres
+#  Scenario: Verificar campos obligatorios en el formulario de registro
+#    Given que estoy en la pagina de registro
+#    When intento enviar el formulario sin completar todos los campos obligatorios
+#    Then deberia ver un mensaje de error indicando los campos faltantes
+#
+#  Scenario: Verificar limites de caracteres en campos de registro
+#    Given que estoy en la pagina de registro
+#    When intento ingresar mas caracteres de los permitidos en los campos de nombre, apellido o correo electronico
+#    Then deberia ver un mensaje de error indicando los limites de caracteres

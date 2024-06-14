@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_PAGE_FLY_SEACH;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.TITTLE_PAGE_FLY_SEACH;
 
 public class ValidationFlySearchPage implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationFlySearchPage implements Question<String> {
     }
 
     public static ValidationFlySearchPage isPresent() {
-
         return new ValidationFlySearchPage();
     }
 

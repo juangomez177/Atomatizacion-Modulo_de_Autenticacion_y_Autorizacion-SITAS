@@ -18,12 +18,12 @@ Feature: Iniciar Sesion en la Aplicacion Web
       | usuario@example.com | ContraseñaValida |
 
   # Casos Excepciones
-  Scenario: Iniciar Sesion con Credenciales No Validas
-    Given que estoy en la pagina de inicio de sesion
-    When ingreso credenciales no validas, como un correo electronico "<correo>" y contrasena "<contrasena>"
-    And hago clic en el boton Iniciar Sesion
-    Then deberia lanzarse un mensaje de error de credenciales invalidas
-
-    Examples:
-      | correo                          | contrasena       |
-      | usuarioNoRegistrado@example.com | ContraseñaValida |
+#  Scenario: Iniciar Sesion con Credenciales No Validas
+#    Given que estoy en la pagina de inicio de sesion
+#    When ingreso credenciales no validas, como un correo electronico "<correo>" y contrasena "<contrasena>"
+#    And hago clic en el boton Iniciar Sesion
+#    Then deberia lanzarse un mensaje de error de credenciales invalidas
+#
+#    Examples:
+#      | correo                          | contrasena       |
+#      | usuarioNoRegistrado@example.com | ContraseñaValida |

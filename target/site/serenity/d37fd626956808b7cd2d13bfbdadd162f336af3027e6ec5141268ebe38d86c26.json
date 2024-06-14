@@ -1,1 +1,153 @@
-{"name":"Verificar la presencia del boton de inicio de sesion","id":"boton-de-inicio-de-sesion;verificar-la-presencia-del-boton-de-inicio-de-sesion","scenarioId":"boton_inicio_sesion:Verificar la presencia del boton de inicio de sesion","methodName":"Verificar la presencia del boton de inicio de sesion","testSteps":[{"number":1,"description":"Given que estoy en cualquier pagina de la aplicacion","duration":4821,"startTime":"2024-05-24T00:50:34.700693700-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":0,"children":[{"number":2,"description":"Usuario open any page","duration":4617,"startTime":"2024-05-24T00:50:34.897694500-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":1,"children":[{"number":3,"description":"usuario opens the Sitas page","duration":4600,"startTime":"2024-05-24T00:50:34.908697600-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":2}]}]},{"number":4,"description":"When hago click en el boton de inicio de sesion","duration":170,"startTime":"2024-05-24T00:50:39.521694900-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":0,"children":[{"number":5,"description":"Usuario click on login","duration":158,"startTime":"2024-05-24T00:50:39.528694800-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":1,"children":[{"number":6,"description":"usuario clicks on Boton de registro","duration":144,"startTime":"2024-05-24T00:50:39.538693900-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":2}]}]},{"number":7,"description":"Then deberia ser redirigido a la pagina de inicio de sesion","duration":1521,"startTime":"2024-05-24T00:50:39.693694400-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":0,"children":[{"number":8,"description":"Then validation login page should be a string containing \u0027Log In\u0027","duration":1445,"startTime":"2024-05-24T00:50:39.763694100-05:00[America/Bogota]","result":"SUCCESS","precondition":false,"level":1}]}],"userStory":{"id":"boton_inicio_sesion","storyName":"Boton de inicio de sesion","displayName":"Boton de inicio de sesion","path":"boton_inicio_sesion","pathElements":[{"name":"boton_inicio_sesion","description":""}],"type":"feature"},"title":"Verificar la presencia del boton de inicio de sesion","description":"","tags":[{"name":"Chrome","type":"context","displayName":"Chrome"},{"name":"Windows","type":"context","displayName":"Windows"},{"name":"Chrome, Windows","type":"context","displayName":"Chrome, Windows"}],"startTime":"2024-05-24T00:50:34.591690500-05:00[America/Bogota]","duration":4910,"projectKey":"","sessionId":"3f4c1b0a348b2998f466e9cfb52bdeca","driver":"chrome","isManualTestingUpToDate":false,"context":"chrome,windows","manual":false,"testSource":"Cucumber","actors":[{"name":"usuario","can":["browse the web"]}],"order":0,"result":"SUCCESS"}
+{
+  "name": "Verificar la presencia del boton de inicio de sesion",
+  "id": "boton-de-inicio-de-sesion;verificar-la-presencia-del-boton-de-inicio-de-sesion",
+  "scenarioId": "boton_inicio_sesion:Verificar la presencia del boton de inicio de sesion",
+  "methodName": "Verificar la presencia del boton de inicio de sesion",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Given que estoy en cualquier pagina de la aplicacion",
+      "duration": 8058,
+      "startTime": "2024-06-13T19:44:24.566255600-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 2,
+          "description": "usuario abre la pagina en #url",
+          "duration": 8002,
+          "startTime": "2024-06-13T19:44:24.617251100-05:00[America/Bogota]",
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 3,
+              "description": "usuario opens the Login page",
+              "duration": 7984,
+              "startTime": "2024-06-13T19:44:24.629254-05:00[America/Bogota]",
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "description": "When hago click en el boton de inicio de sesion",
+      "duration": 191,
+      "startTime": "2024-06-13T19:44:32.626247300-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 5,
+          "description": "Usuario click on login",
+          "duration": 174,
+          "startTime": "2024-06-13T19:44:32.635252100-05:00[America/Bogota]",
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 6,
+              "description": "Usuario click the",
+              "duration": 163,
+              "startTime": "2024-06-13T19:44:32.641248-05:00[America/Bogota]",
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 7,
+                  "description": "usuario clicks on Boton de registro",
+                  "duration": 149,
+                  "startTime": "2024-06-13T19:44:32.649249300-05:00[America/Bogota]",
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "description": "Then deberia ser redirigido a la pagina de inicio de sesion",
+      "duration": 118,
+      "startTime": "2024-06-13T19:44:32.818251200-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 9,
+          "description": "Then validation login page should be a string containing \u0027Log In\u0027",
+          "duration": 35,
+          "startTime": "2024-06-13T19:44:32.897249500-05:00[America/Bogota]",
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1
+        }
+      ]
+    }
+  ],
+  "userStory": {
+    "id": "boton_inicio_sesion",
+    "storyName": "Boton de inicio de sesion",
+    "displayName": "Boton de inicio de sesion",
+    "path": "boton_inicio_sesion",
+    "pathElements": [
+      {
+        "name": "boton_inicio_sesion",
+        "description": ""
+      }
+    ],
+    "narrative": "  Como Usuario registrado\n  Quiero tener un boton visible para iniciar sesion cuando accedo a la aplicacion\n  Para poder iniciar sesion facilmente en micuenta con mis datos personales",
+    "type": "feature"
+  },
+  "title": "Verificar la presencia del boton de inicio de sesion",
+  "description": "",
+  "tags": [
+    {
+      "name": "Chrome",
+      "type": "context",
+      "displayName": "Chrome"
+    },
+    {
+      "name": "Windows",
+      "type": "context",
+      "displayName": "Windows"
+    },
+    {
+      "name": "Chrome, Windows",
+      "type": "context",
+      "displayName": "Chrome, Windows"
+    }
+  ],
+  "startTime": "2024-06-13T19:44:24.209254-05:00[America/Bogota]",
+  "duration": 8396,
+  "projectKey": "",
+  "sessionId": "6c8ec2a58918f0082aab190a4d099d3b",
+  "driver": "chrome",
+  "isManualTestingUpToDate": false,
+  "context": "chrome,windows",
+  "manual": false,
+  "testSource": "Cucumber",
+  "actors": [
+    {
+      "name": "usuario",
+      "can": [
+        "browse the web"
+      ]
+    }
+  ],
+  "order": 0,
+  "result": "SUCCESS"
+}

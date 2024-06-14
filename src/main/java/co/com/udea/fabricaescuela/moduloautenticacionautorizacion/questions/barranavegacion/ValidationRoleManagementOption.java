@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.ROLE_MANAGEMENT_OPTION;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.ROLE_MANAGEMENT_OPTION;
 
 public class ValidationRoleManagementOption implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationRoleManagementOption implements Question<String> {
     }
 
     public static ValidationRoleManagementOption isPresent() {
-
         return new ValidationRoleManagementOption();
     }
 

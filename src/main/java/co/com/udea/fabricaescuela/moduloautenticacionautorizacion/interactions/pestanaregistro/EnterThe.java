@@ -7,14 +7,12 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.*;
-
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.RegisterPage.*;
 
 public class EnterThe implements Interaction {
 
     private final String nombre;
     private final String apellido;
-
     private final String tipoDocumento;
     private final String documento;
     private final String correo;

@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_PAGE_BOOKING;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.TITTLE_PAGE_BOOKING;
 
 public class ValidationBookingPage implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationBookingPage implements Question<String> {
     }
 
     public static ValidationBookingPage isPresent() {
-
         return new ValidationBookingPage();
     }
 

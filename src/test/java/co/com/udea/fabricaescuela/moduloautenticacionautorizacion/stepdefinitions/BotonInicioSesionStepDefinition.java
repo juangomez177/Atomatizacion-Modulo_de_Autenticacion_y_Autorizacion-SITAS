@@ -1,10 +1,9 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.botoniniciosesion.ValidationLoginPage;
-import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.OpenAnyPage;
+import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.abrirSitio.OpenAnyPage;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.botoniniciosesion.ClickOnLogin;
-import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage;
+import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.LoginPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -37,7 +36,7 @@ public class BotonInicioSesionStepDefinition {
 
     @Given("que estoy en cualquier pagina de la aplicacion")
     public void queEstoyEnCualquierPaginaDeLaAplicacionParaInicioSesion() {
-        user.attemptsTo(OpenAnyPage.browser(new SitasPage()));
+        user.attemptsTo(OpenAnyPage.browser(new LoginPage()));
     }
 
     @When("hago click en el boton de inicio de sesion")
@@ -48,6 +47,5 @@ public class BotonInicioSesionStepDefinition {
     @Then("deberia ser redirigido a la pagina de inicio de sesion")
     public void deberiaSerRedirigidoALaPaginaDeInicioDeSesion() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationLoginPage.theSite(), Matchers.containsString("Log In")));
-
     }
 }

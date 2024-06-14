@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.CONFIRMATION_LOGIN;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.LoginPage.CONFIRMATION_LOGIN;
 
 public class ValidationLoginAccount implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationLoginAccount implements Question<String> {
     }
 
     public static ValidationLoginAccount loadCredentials() {
-
         return new ValidationLoginAccount();
     }
 

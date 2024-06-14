@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Boton de registro" skipped="0" tests="1" time="0.42" timestamp="2024-05-23 10:46:28"><testcase name="Usuario no registrado accede al boton de registro"><error message="Cannot invoke &quot;Object.getClass()&quot; because &quot;object&quot; is null" type="java.lang.NullPointerException">Cannot invoke "Object.getClass()" because "object" is null</error><system-err>Cannot invoke "Object.getClass()" because "object" is null&#13;
-co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.botonregistro.OpenAnyPage.inTheApp(OpenAnyPage.java:22)&#13;
-co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions.BotonRegistroStepDefinition.queEstoyEnCualquierPaginaDeLaAplicacion(BotonRegistroStepDefinition.java:42)&#13;
-✽.que estoy en cualquier pagina de la aplicacion(file:///C:/Users/gomez/Desktop/Automatizacio%20Modulo%20de%20Autenticacion%20y%20Autorizacion/src/test/resources/features/boton_registro.feature:7)&#13;
-</system-err></testcase></testsuite>

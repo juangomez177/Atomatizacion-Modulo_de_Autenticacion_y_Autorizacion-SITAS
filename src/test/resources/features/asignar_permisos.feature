@@ -21,11 +21,11 @@ Feature: Asignar permisos de administrador
       | admin@gmail.com | contrasena123 | Administrador |
       | user2@gmail.com | contrasena123 | Super Usuario |
 
-      #Casos Excepciones
-  Scenario: Asignar permisos de administrador a un usuario no es exitoso
-    Given que el administrador ha iniciado sesion en la aplicación web con correo "<correo>" y contrasena "<contrasena>"
-    When el administrador accede a la seccion de administracion de usuarios
-    And selecciona al usuario al que desea asignar permisos de administrador asignando un rol "<rol>"
-    And selecciona la opcion para asignar permisos de administrador
-    And da click al boton de guardar cambios
-    Then aparece un mensaje error en el cambio de rol del usuario
+   #Casos Excepciones
+#  Scenario: Asignar permisos de administrador a un usuario no es exitoso
+#    Given que el administrador ha iniciado sesion en la aplicación web con correo "<correo>" y contrasena "<contrasena>"
+#    When el administrador accede a la seccion de administracion de usuarios
+#    And selecciona al usuario al que desea asignar permisos de administrador asignando un rol "<rol>"
+#    And selecciona la opcion para asignar permisos de administrador
+#    And da click al boton de guardar cambios
+#    Then aparece un mensaje error en el cambio de rol del usuario

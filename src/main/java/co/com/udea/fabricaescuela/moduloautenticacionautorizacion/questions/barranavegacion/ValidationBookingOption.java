@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.BOOKING_OPTION;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.BOOKING_OPTION;
 
 public class ValidationBookingOption implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationBookingOption implements Question<String> {
     }
 
     public static ValidationBookingOption isPresent() {
-
         return new ValidationBookingOption();
     }
 

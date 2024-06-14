@@ -4,16 +4,14 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.GOOGLE_SUCCESS_MESSAGE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.LoginPage.GOOGLE_SUCCESS_MESSAGE;
 
 public class ValidationGoogleLogin implements Question<String> {
 
     public ValidationGoogleLogin() {
     }
 
-
     public static ValidationGoogleLogin isTrue() {
-
         return new ValidationGoogleLogin();
     }
 

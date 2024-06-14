@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_NAVIGATION_BAR;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.TITTLE_NAVIGATION_BAR;
 
 public class ValidationNavBar implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationNavBar implements Question<String> {
     }
 
     public static ValidationNavBar isPresent() {
-
         return new ValidationNavBar();
     }
 
@@ -21,5 +20,4 @@ public class ValidationNavBar implements Question<String> {
         String msg = BrowseTheWeb.as(actor).find(TITTLE_NAVIGATION_BAR).getText();
         return msg;
     }
-
 }

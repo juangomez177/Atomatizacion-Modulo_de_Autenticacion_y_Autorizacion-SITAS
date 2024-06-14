@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_PAGE_CHECKING;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.NavigationBarPage.TITTLE_PAGE_CHECKING;
 
 public class ValidationCheckingPage implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationCheckingPage implements Question<String> {
     }
 
     public static ValidationCheckingPage isPresent() {
-
         return new ValidationCheckingPage();
     }
 

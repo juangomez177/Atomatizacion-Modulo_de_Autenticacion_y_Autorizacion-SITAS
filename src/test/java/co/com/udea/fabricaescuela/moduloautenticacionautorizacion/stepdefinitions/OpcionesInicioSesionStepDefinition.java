@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.opcionesiniciosesion.ValidationFacebookLogin;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.opcionesiniciosesion.ValidationGoogleLogin;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.opcionesiniciosesion.ClickOnFacebookLogin;
@@ -42,17 +41,14 @@ public class OpcionesInicioSesionStepDefinition {
         logger.info("Accediendo a la pagina");
     }
 
-    @Given("que estoy en la pagina de inicio de sesion")
-    public void queEstoyEnLaPaginaDeInicioDeSesion() {
+    @Given("que estoy en la pagina de inicio de sesion para opciones")
+    public void queEstoyEnLaPaginaDeInicioDeSesionParaOpciones() {
 
         //Se garantiza que para llegar  a la pagina de inicio de sesion se hace mediante los pasos de la url principal y el boton de login
         botonInicioSesionStepDefinition.setup();
         botonInicioSesionStepDefinition.queEstoyEnCualquierPaginaDeLaAplicacionParaInicioSesion();
         botonInicioSesionStepDefinition.hagoClicEnElBotonDeLogin();
         botonInicioSesionStepDefinition.deberiaSerRedirigidoALaPaginaDeInicioDeSesion();
-
-        //OnStage.theActorCalled("usuario").attemptsTo(OpenAnyPage.browser("https://frontend-virtual-72qyi8vl3-lauratobons-projects.vercel.app/auth/login"));
-
     }
 
     @When("hago clic en el boton de inicio de sesión con Google")
@@ -68,7 +64,6 @@ public class OpcionesInicioSesionStepDefinition {
     @And("deberia de mostrar un mensaje inicio de sesion con Google es correcto")
     public void deberiaMostrarMensajeInicioDeSesionConGoogleEsCorrecto() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationGoogleLogin.isTrue(), Matchers.containsString("Inicio de sesión con Google es correcto")));
-
     }
 
     @When("hago clic en el boton de inicio de sesión con Facebook")
@@ -85,6 +80,4 @@ public class OpcionesInicioSesionStepDefinition {
     public void deberiaMostrarMensajeInicioDeSesionConFacebookEsCorrecto() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationFacebookLogin.isTrue(), Matchers.containsString("Inicio de sesión con Facebook es correcto")));
     }
-
-
 }

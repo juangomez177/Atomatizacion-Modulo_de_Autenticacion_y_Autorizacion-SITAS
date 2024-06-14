@@ -7,8 +7,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.*;
-
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.EditProfilePage.*;
 
 public class EnterThe implements Interaction {
 
@@ -37,9 +36,8 @@ public class EnterThe implements Interaction {
                 Enter.theValue(apellido).into(INFO_TEXT_SURNAME),
                 Enter.theValue(correo).into(INFO_TEXT_EMAIL),
                 Click.on(INFO_SELECTOR_ID_COUNTRY),
-                SelectFromOptions.byVisibleText(pais).from(SELECTOR_ID_COUNTRY),
+                SelectFromOptions.byVisibleText(pais).from(INFO_SELECTOR_ID_COUNTRY),
                 Enter.theValue(telefono).into(INFO_TEXT_CELLPHONE)
-
         );
     }
 }

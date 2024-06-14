@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_EDIT_PROFILE_2;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.EditProfilePage.TITTLE_EDIT_PROFILE_2;
 
 public class ValidationUpdateProfileAction implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationUpdateProfileAction implements Question<String> {
     }
 
     public static ValidationUpdateProfileAction updateCredentials() {
-
         return new ValidationUpdateProfileAction();
     }
 

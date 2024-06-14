@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.ultimoingresofallido.ValidationAccount;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.ultimoingresofallido.LoginThe;
 import io.cucumber.java.Before;
@@ -39,7 +38,8 @@ public class UltimoIngresoFallidoStepDefinition {
 
     @Given("que estoy en la pagina de Inicio de Sesion")
     public void queEstoyEnLaPaginaDeInicioDeSesion() {
-//Se garantiza que para llegar  a la pagina de inicio de sesion se hace mediante los pasos de la url principal y el boton de login
+
+        //Se garantiza que para llegar  a la pagina de inicio de sesion se hace mediante los pasos de la url principal y el boton de login
         botonInicioSesionStepDefinition.setup();
         botonInicioSesionStepDefinition.queEstoyEnCualquierPaginaDeLaAplicacionParaInicioSesion();
         botonInicioSesionStepDefinition.hagoClicEnElBotonDeLogin();
@@ -56,7 +56,6 @@ public class UltimoIngresoFallidoStepDefinition {
     @Then("la cuenta del usuario se bloquea automaticamente, mostrando un mensaje de cuenta boqueada")
     public void laCuentaDelUsuarioSeBloqueaAutomaticamenteMostrandoUnMensajeDeCuentaBoqueada() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationAccount.isBlocked(), Matchers.containsString("Cuenta Bloqueada por 3 ingresoso fallidos")));
-
     }
 }
 

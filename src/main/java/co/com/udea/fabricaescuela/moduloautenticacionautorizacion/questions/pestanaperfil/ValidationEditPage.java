@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.TITTLE_EDIT_PROFILE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.EditProfilePage.TITTLE_EDIT_PROFILE;
 
 public class ValidationEditPage implements Question<String> {
 
@@ -12,7 +12,6 @@ public class ValidationEditPage implements Question<String> {
     }
 
     public static ValidationEditPage isPresent() {
-
         return new ValidationEditPage();
     }
 

@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.asignarpermisos.ValidationSaveRole;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.asignarpermisos.ClickOnSaveRole;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.asignarpermisos.ClickOnUser;
@@ -45,7 +44,6 @@ public class AsignarPermisosStepDefinition {
     public void queElAdministradorHaIniciadoSesionEnLaAplicacionWebConCorreoYContrasena(String correo, String contrasena) {
 
         // Se garantiza iniciar sesion mediante los steps de PestanaPerfilStepDefinition
-
         pestanaInicioSesionStepDefinition.setup();
         pestanaInicioSesionStepDefinition.queEstoyEnLaPaginaDeInicioSesion();
         pestanaInicioSesionStepDefinition.ingresoCorreoElectronicoYContrasena(correo, contrasena);
@@ -67,20 +65,15 @@ public class AsignarPermisosStepDefinition {
     @And("selecciona la opcion para asignar permisos de administrador asignando un rol {string} al usuario seleccionado")
     public void seleccionaLaOpcionParaAsignarPermisosDeAdministradorAsignandoUnRolAlUsuarioSeleccionado(String rol) {
         user.attemptsTo(EditThe.role(rol));
-
     }
 
     @And("da click al boton de guardar cambios")
     public void daClickAlBotonDeGuardarCambios() {
         user.attemptsTo(ClickOnSaveRole.button());
-
     }
 
     @Then("deberia de aparecer un mensaje de confirmacion que el rol ha sido cambiado correctamente")
     public void deberiaDeAparecerUnMensajeDeConfirmacionQueElRolHaSidoCambiadoCorrectamente() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationSaveRole.isCorrect(), Matchers.containsString("Rol Cambiado Correctamente")));
-
     }
-
-
 }

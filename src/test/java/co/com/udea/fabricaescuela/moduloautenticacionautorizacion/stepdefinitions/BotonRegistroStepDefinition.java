@@ -1,10 +1,9 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.botonregistro.ValidationRegisterPage;
-import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.OpenAnyPage;
+import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.abrirSitio.OpenAnyPage;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.botonregistro.ClickOnRegister;
-import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage;
+import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.RegisterPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -37,18 +36,16 @@ public class BotonRegistroStepDefinition {
 
     @Given("que estoy en cualquier pagina de la aplicacion para registrarme")
     public void queEstoyEnCualquierPaginaDeLaAplicacionParaRegistro() {
-        user.attemptsTo(OpenAnyPage.browser(new SitasPage()));
+        user.attemptsTo(OpenAnyPage.browser(new RegisterPage()));
     }
 
     @When("hago clic en el boton de registro")
     public void hagoClicEnElBotonDeRegistro() {
-
         user.attemptsTo(ClickOnRegister.button());
     }
 
     @Then("deberia ser redirigido a la pagina de registro")
     public void deberiaSerRedirigidoALaPaginaDeRegistro() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationRegisterPage.theSite(), Matchers.containsString("Crear cuenta")));
-
     }
 }

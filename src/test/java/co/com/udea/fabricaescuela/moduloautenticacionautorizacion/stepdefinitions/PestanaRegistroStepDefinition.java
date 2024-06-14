@@ -1,8 +1,6 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanaregistro.ValidationRegisterAccount;
-import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.OpenAnyPage;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.ClickOnRegister;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.RegisterThe;
 import io.cucumber.java.Before;
@@ -15,7 +13,6 @@ import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
@@ -45,13 +42,10 @@ public class PestanaRegistroStepDefinition {
     public void queEstoyEnLaPaginaDeRegistro() {
 
         //Se garantiza que para llegar  a la pagina de registro se hace mediante los pasos de la url principal y el boton de registro
-        /*botonRegistroStepDefinition.setup();
+        botonRegistroStepDefinition.setup();
         botonRegistroStepDefinition.queEstoyEnCualquierPaginaDeLaAplicacionParaRegistro();
         botonRegistroStepDefinition.hagoClicEnElBotonDeRegistro();
-        botonRegistroStepDefinition.deberiaSerRedirigidoALaPaginaDeRegistro();*/
-
-        OnStage.theActorCalled("usuario").attemptsTo(OpenAnyPage.browser("https://frontend-virtual-72qyi8vl3-lauratobons-projects.vercel.app/auth/new-account"));
-
+        botonRegistroStepDefinition.deberiaSerRedirigidoALaPaginaDeRegistro();
     }
 
     @When("ingreso todos los campos obligatorios con nombre {string}, apellido {string}, tipo documento {string}, documento {string}, correo {string}, contrasena {string}, pais {string}, telefono {string}")
@@ -67,7 +61,5 @@ public class PestanaRegistroStepDefinition {
     @Then("deberia ver un mensaje de exito indicando que la cuenta ha sido creada")
     public void deberiaVerUnMensajeDeExitoIndicandoQueLaCuentaHaSidoCreada() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationRegisterAccount.saveCredentials(), Matchers.containsString("Cuenta Creada Correctamente")));
-
     }
-
 }

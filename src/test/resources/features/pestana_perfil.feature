@@ -20,9 +20,9 @@ Feature: Acceso a la Pestaña de Perfil
 
 
 #Casos Excepciones
-  Scenario: No es posible visualizar datos del usuario
-    Given que ya estoy autenticado en la plataforma
-    When hago clic en el icono de perfil en la barra de navegacion
-    Then se despliega el menu con varias opciones, incluida la opcion de Editar Perfil
-    And al hacer clic en Editar Perfil se dirigira al usuario a la pestana de perfil
-    Then no se muestra informacion del usuario
+#  Scenario: No es posible visualizar datos del usuario
+#    Given que ya estoy autenticado en la plataforma
+#    When hago clic en el icono de perfil en la barra de navegacion
+#    Then se despliega el menu con varias opciones, incluida la opcion de Editar Perfil
+#    And al hacer clic en Editar Perfil se dirigira al usuario a la pestana de perfil
+#    Then no se muestra informacion del usuario

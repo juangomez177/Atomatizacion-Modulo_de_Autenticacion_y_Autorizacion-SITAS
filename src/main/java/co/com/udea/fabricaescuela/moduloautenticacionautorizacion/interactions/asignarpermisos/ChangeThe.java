@@ -6,8 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.CHANGE_ROLE_SELECTOR;
-
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.AdminPage.CHANGE_ROLE_SELECTOR;
 
 public class ChangeThe implements Interaction {
 
@@ -24,11 +23,8 @@ public class ChangeThe implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-
                 Click.on(CHANGE_ROLE_SELECTOR),
                 SelectFromOptions.byVisibleText(rol).from(CHANGE_ROLE_SELECTOR)
-
-
         );
     }
 }

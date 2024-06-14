@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.cambiarcontrasena.ValidationSavePassword;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.cambiarcontrasena.ChangeThe;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.cambiarcontrasena.ClickOnChangePassword;
@@ -46,7 +45,6 @@ public class CambiarContrasenaStepDefinition {
         // Se garantiza de autenticarse mediante PestanaPerfilStepDefinition.class
         pestanaPerfilStepDefinition.setup();
         pestanaPerfilStepDefinition.queYaEstoyAutenticadoEnLaPlataforma(correo, contrasena);
-
     }
 
     @When("intento cambiar mi contrasena accediento a la pestana de edicion de perfil")
@@ -77,8 +75,5 @@ public class CambiarContrasenaStepDefinition {
     @Then("debería de mostrar un mensaje de contrasena cambiada correctamente")
     public void deberíaDeMostrarUnMensajeDeContrasenaCambiadaCorrectamente() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationSavePassword.isCorrect(), Matchers.containsString("Contrasena Actualizada correctamente")));
-
     }
-
-
 }

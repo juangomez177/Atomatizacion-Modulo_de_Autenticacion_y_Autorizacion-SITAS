@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanaperfil.ValidationEditPage;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.pestanaperfil.ValidationEditProfile;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaperfil.ClickOnEditProfile;
@@ -69,5 +68,4 @@ public class PestanaPerfilStepDefinition {
     public void seDirigeALaPestanaDePerfilCargarandoLosDatosActualesDelUsuarioConNombreApellidoCorreoElectronicoPaisTelefonoYContrasena(String nombre, String apellido, String correo, String pais, String telefono, String contrasena) {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationEditPage.isPresent(), Matchers.containsString("Actualizar Datos")));
     }
-
 }

@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.SAVE_ROLE_SUCCESS_MESSAGE;
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.AdminPage.SAVE_ROLE_SUCCESS_MESSAGE;
 
 public class ValidationSaveRole implements Question<String> {
 

@@ -1,6 +1,5 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.stepdefinitions;
 
-
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.questions.contrasenasegura.ValidationPasswordSafe;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.contrasenasegura.TypingThe;
 import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro.ClickOnRegister;
@@ -55,10 +54,9 @@ public class ContrasenaSeguraStepDefinition {
     public void doyClickAlBotonDeRegistrarCuenta() {
         user.attemptsTo(ClickOnRegister.button());
     }
-    
+
     @And("deberia ver un mensaje de advertencia indicando que la contrasena no es segura")
     public void deberiaVerUnMensajeDeAdvertenciaIndicandoQueLaContrasenaNoEsSegura() {
         GivenWhenThen.then(user).should(GivenWhenThen.seeThat(ValidationPasswordSafe.message(), Matchers.containsString("Contrasena Insegura")));
-
     }
 }

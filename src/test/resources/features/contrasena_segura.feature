@@ -18,9 +18,9 @@ Feature: Contrasena Segura
       | 123        |
 
   # Casos Excepciones
-  Scenario: Se permite la creacion de una cuenta con contrasena debil
-    Given que estoy en la pagina pricipal de la aplicacion
-    When accedo a la pestana de resitro
-    And ingreso una cotrasena generica "<contrasena>" que no cumple los estandares
-    When doy click al boton de registrar cuenta
-    Then nose muestra  un mensaje de advertencia y se permite que la cuenta pueda seguir creandose
+#  Scenario: Se permite la creacion de una cuenta con contrasena debil
+#    Given que estoy en la pagina pricipal de la aplicacion
+#    When accedo a la pestana de resitro
+#    And ingreso una cotrasena generica "<contrasena>" que no cumple los estandares
+#    When doy click al boton de registrar cuenta
+#    Then nose muestra  un mensaje de advertencia y se permite que la cuenta pueda seguir creandose

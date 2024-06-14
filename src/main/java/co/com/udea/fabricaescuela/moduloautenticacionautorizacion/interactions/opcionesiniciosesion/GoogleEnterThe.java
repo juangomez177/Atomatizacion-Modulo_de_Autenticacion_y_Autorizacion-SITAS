@@ -6,8 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.*;
-
+import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.LoginPage.*;
 
 public class GoogleEnterThe implements Interaction {
     private final String correo;
@@ -29,7 +28,6 @@ public class GoogleEnterThe implements Interaction {
                 Enter.theValue(correo).into(GOOGLE_EMAIL_INPUT),
                 Enter.theValue(contrasena).into(GOOGLE_PASSWORD_INPUT),
                 Click.on(GOOGLE_NEXT_BUTTON)
-
         );
     }
 }

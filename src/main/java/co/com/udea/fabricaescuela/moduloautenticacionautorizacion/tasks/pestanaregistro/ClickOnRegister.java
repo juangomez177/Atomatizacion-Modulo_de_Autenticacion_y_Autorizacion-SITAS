@@ -1,11 +1,10 @@
 package co.com.udea.fabricaescuela.moduloautenticacionautorizacion.tasks.pestanaregistro;
 
+import co.com.udea.fabricaescuela.moduloautenticacionautorizacion.interactions.pestanaregistro.ClickThe;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.udea.fabricaescuela.moduloautenticacionautorizacion.userinterfaces.SitasPage.REGISTER_PAGE_BUTTON;
 
 public class ClickOnRegister implements Task {
 
@@ -17,7 +16,7 @@ public class ClickOnRegister implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(Click.on(REGISTER_PAGE_BUTTON));
+        actor.attemptsTo(ClickThe.registerPageButton());
     }
 
 

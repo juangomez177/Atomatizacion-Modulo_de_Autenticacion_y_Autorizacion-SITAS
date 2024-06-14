@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.Tasks;
 public class RegisterThe implements Task {
     private final String nombre;
     private final String apellido;
-
     private final String tipoDocumento;
     private final String documento;
     private final String correo;
@@ -35,8 +34,6 @@ public class RegisterThe implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(EnterThe.credentialsToSave(nombre, apellido, tipoDocumento, documento, correo, contrasena, pais, telefono));
     }
-
-
 }
 
 
